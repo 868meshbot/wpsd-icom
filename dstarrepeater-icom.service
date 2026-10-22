@@ -1,0 +1,20 @@
+[Unit]
+Description=DStarRepeater - Icom Access Point/Terminal Mode
+After=network.target
+# Not enabled at boot: started and stopped by `icom-mode`.
+
+[Service]
+Type=simple
+RuntimeDirectory=dstarrepeater
+Environment=DSTAR_RUN_DIR=/run/dstarrepeater
+ExecStart=/usr/bin/dstarrepeaterd /etc/dstarrepeater/icom.ini
+Restart=on-failure
+RestartSec=3s
+TimeoutStopSec=10s
+KillSignal=SIGTERM
+StandardOutput=journal
+StandardError=journal
+SyslogIdentifier=dstarrepeaterd
+
+[Install]
+WantedBy=multi-user.target

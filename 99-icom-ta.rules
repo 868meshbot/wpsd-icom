@@ -1,0 +1,3 @@
+# Icom ID-50E (USB 0c26:0046) -> /dev/icom_ta
+# For another Icom radio, check its ID with `lsusb` and add a line with its idProduct.
+SUBSYSTEM=="tty", ATTRS{idVendor}=="0c26", ATTRS{idProduct}=="0046", SYMLINK+="icom_ta", GROUP="dialout", MODE="0660"
