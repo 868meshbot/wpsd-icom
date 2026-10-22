@@ -1,4 +1,6 @@
 #!/bin/bash
+# SPDX-License-Identifier: GPL-3.0-or-later
+# Copyright (C) 2026 868meshbot
 # Build G4KLX DStarRepeater on this Pi and install Icom Access Point/Terminal Mode
 # support for WPSD. Run from the folder containing these files:   sudo ./install.sh
 set -euo pipefail

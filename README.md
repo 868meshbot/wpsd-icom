@@ -71,3 +71,9 @@ Logs also go to `/var/log/pi-star/dstarrepeaterd-YYYY-MM-DD.log`.
 
 DStarRepeater is by Jonathan Naylor G4KLX: https://github.com/g4klx/DStarRepeater.
 WPSD is by W0CHP. This repo only adds the glue to run them together with an Icom radio.
+
+## License
+
+Copyright (C) 2026 868meshbot. Licensed under the GNU General Public License v3.0 or later;
+see [LICENSE](LICENSE). DStarRepeater is separately licensed by G4KLX (GPL-2.0-or-later) and
+is downloaded and built on your Pi, not included here.

@@ -1,4 +1,6 @@
 #!/bin/bash
+# SPDX-License-Identifier: GPL-3.0-or-later
+# Copyright (C) 2026 868meshbot
 # Build G4KLX DStarRepeater on this Pi and install Icom Access Point/Terminal Mode
 # support for WPSD. Self-contained: save as install.sh and run: sudo bash install.sh
 set -euo pipefail
@@ -88,6 +90,8 @@ systemctl daemon-reload
 
 cat > /usr/local/bin/icom-mode <<'ICOMMODE'
 #!/bin/bash
+# SPDX-License-Identifier: GPL-3.0-or-later
+# Copyright (C) 2026 868meshbot
 # icom-mode: switch a WPSD hotspot between MMDVMHost and DStarRepeater driving an
 # Icom radio in Access Point / Terminal Mode (USB, /dev/icom_ta).
 #

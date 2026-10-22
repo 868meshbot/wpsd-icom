@@ -1,4 +1,6 @@
 #!/bin/bash
+# SPDX-License-Identifier: GPL-3.0-or-later
+# Copyright (C) 2026 868meshbot
 # icom-mode: switch a WPSD hotspot between MMDVMHost and DStarRepeater driving an
 # Icom radio in Access Point / Terminal Mode (USB, /dev/icom_ta).
 #
